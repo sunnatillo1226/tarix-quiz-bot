@@ -1,19 +1,16 @@
 {
-  "name": "@workspace/telegram-bot",
+  "name": "tarix-quiz-bot",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "build": "node ./build.mjs",
-    "start": "node dist/index.cjs",
-    "dev": "node --watch-path=src --loader ts-node/esm src/index.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "start": "node dist/index.cjs"
   },
   "dependencies": {
     "telegraf": "^4.16.3",
     "pino": "^9.14.0"
   },
   "devDependencies": {
-    "@types/node": "catalog:",
+    "@types/node": "^22.0.0",
     "esbuild": "0.27.3"
   }
 }
